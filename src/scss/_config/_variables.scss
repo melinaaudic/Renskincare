@@ -1,0 +1,111 @@
+$fa-font-path: "../fonts";
+
+//
+// Color system
+//
+$blue-primary: #8dc1e9;
+$blue-patch: #0089c9;
+$blue-text: #0b2b56;
+$blue-bg: #d8f2fd;
+$grey-text: #5f6162;
+$pink-primary: #ce1397;
+$orange-tuto: #ffb701;
+$blue-tuto: #83d6f6;
+$pink-tuto: #f7a5fa;
+$grey-style: #4f595f;
+$blue-style: #1179bd;
+$green-style: #93bda5;
+$orange-style: #f39006;
+$black: #000;
+$white: #fff;
+
+$primary: $blue-primary;
+$secondary: $pink-primary;
+$dark: $black;
+
+$theme-colors: (
+  "primary":      $blue-primary,
+  "patch":        $blue-patch,
+  "orange-tuto":  $orange-tuto,
+  "blue-tuto":    $blue-tuto,
+  "pink-tuto":    $pink-tuto,
+  "grey":         $grey-text,
+  "grey-style":   $grey-style,
+  "blue-style":   $blue-style,
+  "green-style":  $green-style,
+  "orange-style": $orange-style
+);
+
+// Grid breakpoints
+$container-max-widths: (
+  xl: 1280px
+);
+
+
+// Components
+$border-width:   3px;
+
+// Spacing
+$spacer:         20px;
+$spacers: (
+  6: ($spacer * 6),
+  7: ($spacer * 9)
+);
+
+// body
+$body-color: $blue-text;
+
+// Paragraphs
+$paragraph-margin-bottom: 20px;
+
+// Grid columns
+$grid-gutter-width:       20px !default;
+
+// Fonts
+@include font('Hermes', '../fonts/Hermes-Regular', 400, normal);
+@include font('Hermes', '../fonts/Hermes-Bold', 700, normal);
+@include font('Hermes', '../fonts/Hermes-Light', 300, normal);
+@include font('Hermes', '../fonts/Hermes-Thin', 100, normal);
+$font-family-sans-serif: 'Hermes', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+$font-size-base:  1rem; // Assumes the browser default, typically `16px`
+$font-size-xlg:   ($font-size-base * 3);
+$font-size-xsm:   ($font-size-base * .6);
+
+$h1-font-size:     $font-size-base * 2;
+$h2-font-size:     $font-size-base * 1.6;
+$h3-font-size:     $font-size-base * 1.4;
+$h4-font-size:     $font-size-base * 1.2;
+$h5-font-size:     $font-size-base * 1.1;
+$h6-font-size:     $font-size-base;
+
+$display1-size:               4rem;
+$display2-size:               2.9rem;
+$display3-size:               2rem;
+$display4-size:               3.5rem;
+
+// HR
+$hr-border-color:             $blue-patch;
+$hr-border-width:             $border-width * 3;
+
+
+// Navs
+$nav-link-font-size:         .9rem;
+$navbar-padding-y:           ($spacer / 2);
+$navbar-padding-x:           $spacer;
+$navbar-nav-link-padding-x:  .7rem;
+$navbar-dark-color:          $white;
+$navbar-dark-hover-color:    rgba($white, .9);
+$navbar-dark-active-color:   $white;
+
+// Btns
+$btn-border-radius:          0;
+$btn-border-radius-lg:       0;
+$btn-border-radius-sm:       0;
+
+// Forms
+$input-border-width:          1px;
+$input-border-radius:         0;
+$input-placeholder-color:     $grey-text;
+
+$custom-checkbox-indicator-border-radius:       0;

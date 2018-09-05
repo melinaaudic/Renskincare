@@ -1,0 +1,55 @@
+.nav-link {
+  font-size: $nav-link-font-size;
+}
+
+.echantillon-wrapper {
+  font-size: $font-size-sm;
+}
+
+.xsmall {
+  font-size: $font-size-xsm;
+}
+
+.patch-inner {
+  position: absolute;
+  width: 115px;
+  height: 115px;
+  font-size: 16px;
+  padding-top: 50px;
+  text-align: center;
+  padding-bottom: 50px;
+  line-height: 16px;
+}
+
+.percent-inner {
+  bottom: 0;
+}
+
+.jeu-wrapper {
+  background-color: $blue-bg;
+  background-image: url(../medias/bg-jeu.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  min-height: 925px;
+}
+
+.a-propos-wrapper {
+  background-image: url(../medias/a-propos-slide.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  min-height: 250px;
+}
+
+@include media-breakpoint-down(md) {
+  $display1-size: 2rem;
+.display-1{
+  font-size: $display1-size;
+}
+}
+
+@include media-breakpoint-down(sm) {
+  .product-wrapper {
+    background-image: none;
+    min-height: 600px;
+  }
+}
